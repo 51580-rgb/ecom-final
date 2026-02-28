@@ -9,19 +9,19 @@ function init(){
   if(!localStorage.getItem("products")){
     const products=[
       {id:1,name:"Gaming Mouse RGB",price:890,stock:15,
-       img:"https://images.unsplash.com/photo-1587202372775-e229f172b9d7",
+       img:"https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
        desc:"เมาส์เกมมิ่ง RGB ปรับ DPI ได้ 7200"},
       {id:2,name:"Mechanical Keyboard",price:1990,stock:10,
-       img:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+       img:"https://images.unsplash.com/photo-1625130694338-4110ba634e59?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
        desc:"คีย์บอร์ด Mechanical Blue Switch"},
       {id:3,name:"Gaming Headset",price:1590,stock:8,
-       img:"https://images.unsplash.com/photo-1580894894513-541e068a3e2b",
+       img:"https://media-cdn.bnn.in.th/4828/097855145710-1-square_medium.jpg",
        desc:"หูฟังเกมมิ่ง 7.1 Surround"},
       {id:4,name:"27\" Monitor 144Hz",price:7990,stock:5,
-       img:"https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
+       img:"https://www.jib.co.th/img_master/product/original/2023031413521158404_1.jpg",
        desc:"จอ 27 นิ้ว 144Hz IPS"},
       {id:5,name:"Laptop Stand Aluminum",price:650,stock:20,
-       img:"https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+       img:"https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2022/07/ergotrend-aluminum-laptop-riser-01-laptop-stand-cover-view.jpg",
        desc:"แท่นวางโน้ตบุ๊กอลูมิเนียม"}
     ];
     localStorage.setItem("products",JSON.stringify(products));
