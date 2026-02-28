@@ -381,3 +381,70 @@ body{
   gap:15px;
   justify-content:center;
 }
+/* ===== HERO SECTION ===== */
+.hero-section{
+  text-align:center;
+  padding:120px 20px;
+  animation:fadeUp .8s ease forwards;
+}
+
+.hero-section h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.hero-section p{
+  max-width:600px;
+  margin:auto;
+  opacity:.8;
+  margin-bottom:40px;
+}
+
+.hero-btn{
+  max-width:220px;
+  margin:auto;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section{
+  padding:100px 0;
+  display:flex;
+  justify-content:center;
+}
+
+.contact-card{
+  width:500px;
+  background:rgba(255,255,255,0.05);
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);
+  backdrop-filter:blur(15px);
+  text-align:center;
+  animation:fadeUp 1s ease forwards;
+}
+
+.contact-card h2{
+  margin-bottom:25px;
+  color:#00c6ff;
+}
+
+.contact-card p{
+  margin:10px 0;
+  font-size:15px;
+  opacity:.9;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  text-align:center;
+  padding:40px 0;
+  background:rgba(0,0,0,.4);
+  margin-top:60px;
+}
+
+.footer .brand{
+  font-weight:700;
+  background:linear-gradient(45deg,#00c6ff,#0072ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
