@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init(); checkAdmin(); loadDashboard(); loadAdminProducts();">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Admin Panel</div>
+    <div class="nav-links">
+      <a href="shop.html">Shop</a>
+      <a href="index.html">Home</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- DASHBOARD -->
+  <h1 style="margin-bottom:40px;">📊 Dashboard</h1>
+  <div id="dashboard" class="grid"></div>
+
+  <hr style="margin:60px 0;opacity:.2;">
+
+  <!-- ADD PRODUCT -->
+  <h1 style="margin-bottom:30px;">➕ เพิ่มสินค้าใหม่</h1>
+
+  <div class="admin-form">
+    <form onsubmit="addProduct(event)">
+      <input type="text" id="pName" placeholder="ชื่อสินค้า" required>
+      <textarea id="pDesc" placeholder="รายละเอียดสินค้า" required></textarea>
+      <input type="number" id="pPrice" placeholder="ราคา (บาท)" required>
+      <input type="number" id="pStock" placeholder="จำนวนสินค้า (Stock)" required>
+      <input type="text" id="pImg" placeholder="ลิงก์รูปภาพ (URL)" required>
+      <button class="btn">เพิ่มสินค้า</button>
+    </form>
+  </div>
+
+  <hr style="margin:60px 0;opacity:.2;">
+
+  <!-- PRODUCT MANAGEMENT -->
+  <h1 style="margin-bottom:40px;">🛍 จัดการสินค้า</h1>
+  <div id="adminProducts" class="grid"></div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

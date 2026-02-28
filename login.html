@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-body" onload="init()">
+
+<div class="auth-wrapper">
+  <div class="auth-card-modern">
+
+    <h2>EarthIT Store</h2>
+    <p class="auth-sub">Login to your account</p>
+
+    <form onsubmit="login(event)">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button class="btn">Login</button>
+    </form>
+
+    <p style="margin-top:20px;font-size:14px;">
+      Don't have an account?
+      <a href="register.html">Create Account</a>
+    </p>
+
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
